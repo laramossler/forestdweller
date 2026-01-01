@@ -20,8 +20,8 @@
   --color-clay: var(--clay);
 
   /* Typography */
-  --font-sans: var(--font-inter);
-  --font-serif: var(--font-crimson);
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Crimson Text', Georgia, serif;
 
   /* Font sizes */
   --font-size-base: 1.125rem; /* 18px */
