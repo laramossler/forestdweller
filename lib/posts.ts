@@ -26,7 +26,7 @@ export function getAllPosts(): PostMetadata[] {
       return {
         slug,
         title: data.title,
-        date: data.date,
+        date: typeof data.date === 'string' ? data.date : data.date.toISOString().split('T')[0],
         category: data.category,
         season: data.season,
         year: data.year,
@@ -51,7 +51,7 @@ export function getPostBySlug(slug: string): Post | null {
     return {
       slug,
       title: data.title,
-      date: data.date,
+      date: typeof data.date === 'string' ? data.date : data.date.toISOString().split('T')[0],
       category: data.category,
       season: data.season,
       year: data.year,
